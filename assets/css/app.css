@@ -1,0 +1,702 @@
+header > div h1, header > div > div, section .content, section .content ul.galerie li, section .content ul.media li, section .content ul.bz li p.text, section .content ul.bz li p.img, section .content ul.adress span, section aside, footer ul.recommend.link-list, footer > div.logo {
+  float: left;
+}
+
+body section, body nav, body header, body footer {
+  *zoom: 1;
+}
+body section:before, body nav:before, body header:before, body footer:before, body section:after, body nav:after, body header:after, body footer:after {
+  content: " ";
+  display: table;
+}
+body section:after, body nav:after, body header:after, body footer:after {
+  clear: both;
+}
+
+header > div h1, header > div > div, section .content, section .content ul.galerie li, section .content ul.media li, section .content ul.bz li p.text, section .content ul.bz li p.img, section .content ul.adress span, section aside, footer ul.recommend.link-list, footer > div.logo {
+  position: relative;
+  min-height: 1px;
+  padding: 0 10px;
+}
+
+@font-face {
+  font-family: "Helvetica Neue LTPro";
+  src: url("HelveticaNeueLTPro.otf") format("truetype");
+}
+
+.mo-sprite, section .content h4.color img, section .content ul.dzialaj li.num_1 img, section .content ul.dzialaj li.num_2 img, section .content ul.dzialaj li.num_3 img, section .content ul.dzialaj li.num_4 img, section .content ul.dzialaj li.num_5 img, section .content ul.o-nas li img, section .content ul.bz li p.img.logo img, section .content ul.bz li p.img.alfabet img, section .content ul.bz li p.img.kalendarz img, section .content ul.bz li p.img.rysek img, section .content ul.adress span.color img, footer ul.recommend.link-list li.logo-czas, footer ul.recommend.link-list li.logo-multikino, footer ul.recommend.link-list li.logo-qlturka, footer ul.recommend.link-list li.logo-tvnstyle, footer ul.recommend.link-list li.logo-sieciaki, footer > div.logo img {
+  background: url('../images/mo-s9ae74a12d2.png') no-repeat;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+body section, body nav, body header, body footer {
+  width: 960px;
+  max-width: 100%;
+  min-width: 768px;
+  margin: 0 auto;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  body section, body nav, body header, body footer {
+    width: auto;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+body header {
+  background: white;
+  height: 112px;
+  margin-top: 24px;
+  padding: 5px;
+  padding-bottom: 0px;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body header > div {
+  background: transparent url('../images/mowimyobrazami-header-bg.png?1359979580') top center repeat-x;
+  height: 112px;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+body nav, body section {
+  background-color: white;
+  padding: 10px;
+}
+body section {
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+nav .nav-bar {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #accb00), color-stop(100%, #a5c400));
+  background-image: -webkit-linear-gradient(bottom, #accb00, #a5c400);
+  background-image: -moz-linear-gradient(bottom, #accb00, #a5c400);
+  background-image: -o-linear-gradient(bottom, #accb00, #a5c400);
+  background-image: linear-gradient(bottom, #accb00, #a5c400);
+  height: 38px;
+  border: none;
+  margin: 0;
+}
+nav .nav-bar li {
+  width: 16.6%;
+  border: none;
+  text-align: center;
+  -webkit-box-shadow: #a5c400 3px 0px 0px;
+  -moz-box-shadow: #a5c400 3px 0px 0px;
+  box-shadow: #a5c400 3px 0px 0px;
+  border-right: 1px solid #819800;
+  border-left: 1px solid #d7fe00;
+}
+nav .nav-bar li a {
+  color: white;
+  font-size: 16px;
+}
+nav .nav-bar li:first-child {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-box-shadow: #a5c400 3px 0px 0px;
+  -moz-box-shadow: #a5c400 3px 0px 0px;
+  box-shadow: #a5c400 3px 0px 0px;
+  border-left: none;
+}
+nav .nav-bar li:first-child a:hover {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+nav .nav-bar li:last-child {
+  border-right: none;
+  width: 159px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-box-shadow: transparent 0px 0px 0px;
+  -moz-box-shadow: transparent 0px 0px 0px;
+  box-shadow: transparent 0px 0px 0px;
+}
+nav .nav-bar li:last-child a:hover {
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+nav .nav-bar li a:hover {
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #819800), color-stop(100%, #7a9100));
+  background-image: -webkit-linear-gradient(bottom, #819800, #7a9100);
+  background-image: -moz-linear-gradient(bottom, #819800, #7a9100);
+  background-image: -o-linear-gradient(bottom, #819800, #7a9100);
+  background-image: linear-gradient(bottom, #819800, #7a9100);
+}
+nav .nav-bar li:active, nav .nav-bar li.active {
+  border-right: 1px solid #819800;
+  border-left: 1px solid #d7fe00;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #f3f3f3), color-stop(100%, #e9e9e9));
+  background-image: -webkit-linear-gradient(bottom, #f3f3f3, #e9e9e9);
+  background-image: -moz-linear-gradient(bottom, #f3f3f3, #e9e9e9);
+  background-image: -o-linear-gradient(bottom, #f3f3f3, #e9e9e9);
+  background-image: linear-gradient(bottom, #f3f3f3, #e9e9e9);
+}
+nav .nav-bar li:active:first-child, nav .nav-bar li.active:first-child {
+  border-left: none;
+}
+nav .nav-bar li:active:last-child, nav .nav-bar li.active:last-child {
+  border-right: none;
+}
+nav .nav-bar li:active a, nav .nav-bar li.active a {
+  color: #767676;
+}
+nav .nav-bar li:active a:hover, nav .nav-bar li.active a:hover {
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #819800), color-stop(100%, #7a9100));
+  background-image: -webkit-linear-gradient(bottom, #819800, #7a9100);
+  background-image: -moz-linear-gradient(bottom, #819800, #7a9100);
+  background-image: -o-linear-gradient(bottom, #819800, #7a9100);
+  background-image: linear-gradient(bottom, #819800, #7a9100);
+  color: white;
+}
+
+header > div img.logo {
+  background: transparent url('../images/mowimyobrazami-logo.png?1359979580') top left no-repeat;
+  height: 106px;
+  margin: -3px 8px;
+  position: absolute;
+}
+header > div h1 {
+  font-size: 29px;
+  color: #6a6a6a;
+  padding: 35px 0px 35px 110px;
+  margin: 0px;
+  width: 62.5%;
+}
+@media only screen and (max-width: 767px) {
+  header > div h1 {
+    float: none;
+    width: auto;
+  }
+}
+header > div > div {
+  width: 37.5%;
+  text-align: right;
+}
+@media only screen and (max-width: 767px) {
+  header > div > div {
+    float: none;
+    width: auto;
+  }
+}
+header > div > div h2 {
+  font-size: 19px;
+  color: #6a6a6a;
+  padding: 10px 0px;
+  margin-top: 7px;
+  margin-bottom: 0px;
+}
+header > div > div h2 big {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #accb00), color-stop(100%, #a5c400));
+  background-image: -webkit-linear-gradient(bottom, #accb00, #a5c400);
+  background-image: -moz-linear-gradient(bottom, #accb00, #a5c400);
+  background-image: -o-linear-gradient(bottom, #accb00, #a5c400);
+  background-image: linear-gradient(bottom, #accb00, #a5c400);
+  text-shadow: rgba(51, 51, 51, 0.3) 1px 1px 1px 0px 1px #aaaaaa;
+  padding: 4px 7px 4px 7px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+header > div > div .search-box {
+  padding: 6px 10px;
+  position: relative;
+  right: -10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ededed;
+  float: right;
+}
+header > div > div .search-box .button {
+  float: right;
+  width: 75px;
+}
+header > div > div .search-box input {
+  margin-right: 5px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  height: 30px;
+  width: 175px;
+  float: left;
+}
+header > div > div .search-box input::-webkit-input-placeholder, header > div > div .search-box input:-moz-placeholder, header > div > div .search-box input::-moz-placeholder, header > div > div .search-box input:-ms-input-placeholder {
+  color: #aeaeae;
+}
+
+.button {
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #accb00), color-stop(100%, #a5c400));
+  background-image: -webkit-linear-gradient(bottom, #accb00, #a5c400);
+  background-image: -moz-linear-gradient(bottom, #accb00, #a5c400);
+  background-image: -o-linear-gradient(bottom, #accb00, #a5c400);
+  background-image: linear-gradient(bottom, #accb00, #a5c400);
+  text-transform: uppercase;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+section .panel.radius {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 15px 25px;
+  border: none;
+  background: transparent url('../images/mowimyobrazami-top.png?1360068451') top left no-repeat;
+  min-height: 200px;
+}
+section .panel.radius h2 {
+  font-size: 28px;
+  color: #a5c400;
+  margin-top: 18px;
+}
+section .panel.radius h2 strong {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+section .panel.radius p {
+  font-size: 12px;
+  line-height: 14px;
+  width: 45%;
+}
+section .panel.radius .button {
+  padding: 10px 15px;
+}
+
+section .content {
+  width: 68.75%;
+}
+@media only screen and (max-width: 767px) {
+  section .content {
+    float: none;
+    width: auto;
+  }
+}
+section .content p {
+  padding-right: 10px;
+}
+section .content h3 {
+  font-size: 18px;
+  color: #656565;
+}
+section .content h4 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #656565;
+  text-shadow: rgba(51, 51, 51, 0.3) 1px 1px 1px 0px 1px #aaaaaa;
+}
+section .content h4.color {
+  position: relative;
+  padding: 10px 0;
+  color: #8a9c2c;
+}
+section .content h4.color img {
+  background-position: -101px -56px;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: -12px;
+  left: 280px;
+}
+section .content .map .icon {
+  position: relative;
+  top: -200px;
+  left: 285px;
+}
+section .content ul {
+  list-style: none;
+}
+section .content ul li {
+  *zoom: 1;
+}
+section .content ul li:before, section .content ul li:after {
+  content: " ";
+  display: table;
+}
+section .content ul li:after {
+  clear: both;
+}
+section .content ul.galerie li {
+  width: 25%;
+}
+@media only screen and (max-width: 767px) {
+  section .content ul.galerie li {
+    float: none;
+    width: auto;
+  }
+}
+section .content ul.galerie li img {
+  width: 100%;
+}
+section .content ul.galerie li p {
+  margin-top: -8px;
+  padding: 10px 5px;
+  max-height: 58px;
+  text-align: center;
+  background: #f9f9f8;
+  font-size: 12px;
+  color: #aeaea0;
+}
+section .content ul.galerie li p.one-line {
+  padding: 19px 5px;
+}
+section .content ul.media li {
+  width: 50%;
+}
+@media only screen and (max-width: 767px) {
+  section .content ul.media li {
+    float: none;
+    width: auto;
+  }
+}
+section .content ul.media li img {
+  width: 100%;
+}
+section .content ul.media li p {
+  margin-top: -8px;
+  padding: 10px;
+  text-align: center;
+  background: #f9f9f8;
+  color: #aeaea0;
+}
+section .content ul.dzialaj {
+  margin-bottom: 20px;
+}
+section .content ul.dzialaj li {
+  color: #8a9c2c;
+  padding: 5px 10px 5px 30px;
+  position: relative;
+}
+section .content ul.dzialaj li.num_1 img {
+  background-position: 0 -136px;
+  height: 26px;
+  width: 22px;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+section .content ul.dzialaj li.num_2 img {
+  background-position: -44px -136px;
+  height: 26px;
+  width: 22px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+section .content ul.dzialaj li.num_3 img {
+  background-position: 0 -192px;
+  height: 26px;
+  width: 22px;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+section .content ul.dzialaj li.num_4 img {
+  background-position: -22px -136px;
+  height: 26px;
+  width: 22px;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+section .content ul.dzialaj li.num_5 img {
+  background-position: -22px -192px;
+  height: 26px;
+  width: 22px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+section .content ul.dzialaj li.text-right {
+  text-align: right;
+}
+section .content ul.o-nas li {
+  color: #8a9c2c;
+  padding: 5px 10px 5px 20px;
+  position: relative;
+}
+section .content ul.o-nas li img {
+  background-position: 0 -56px;
+  height: 10px;
+  width: 12px;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+section .content ul.bz li {
+  margin: 0 -8px;
+}
+section .content ul.bz li p.text {
+  width: 62.5%;
+}
+@media only screen and (max-width: 767px) {
+  section .content ul.bz li p.text {
+    float: none;
+    width: auto;
+  }
+}
+section .content ul.bz li p.img {
+  width: 37.5%;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  section .content ul.bz li p.img {
+    float: none;
+    width: auto;
+  }
+}
+section .content ul.bz li p.img.logo img {
+  background-position: 0 -222px;
+  height: 117px;
+  width: 220px;
+}
+section .content ul.bz li p.img.alfabet {
+  top: -30px;
+}
+section .content ul.bz li p.img.alfabet img {
+  background-position: 0 -692px;
+  height: 190px;
+  width: 220px;
+}
+section .content ul.bz li p.img.kalendarz {
+  top: -30px;
+}
+section .content ul.bz li p.img.kalendarz img {
+  background-position: 0 -339px;
+  height: 175px;
+  width: 220px;
+}
+section .content ul.bz li p.img.rysek {
+  top: -20px;
+}
+section .content ul.bz li p.img.rysek img {
+  background-position: 0 -514px;
+  height: 178px;
+  width: 220px;
+}
+section .content ul.adress span {
+  width: 50%;
+}
+@media only screen and (max-width: 767px) {
+  section .content ul.adress span {
+    float: none;
+    width: auto;
+  }
+}
+section .content ul.adress span.color {
+  color: #8a9c2c;
+  padding-left: 20px;
+  padding-right: 0px;
+  position: relative;
+}
+section .content ul.adress span.color img {
+  background-position: 0 -56px;
+  height: 10px;
+  width: 12px;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+}
+section .content .button {
+  padding: 10px 15px;
+}
+section .content .color {
+  color: #8a9c2c;
+}
+section aside {
+  width: 31.25%;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  top: 0;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-left: 1px dashed #e1e1dd;
+  background: #f9f9f8;
+}
+@media only screen and (max-width: 767px) {
+  section aside {
+    float: none;
+    width: auto;
+  }
+}
+section aside h4 {
+  border-top: 1px dashed #e1e1dd;
+  font-size: 16px;
+  line-height: 20px;
+  color: #656565;
+  text-shadow: rgba(51, 51, 51, 0.3) 1px 1px 1px 0px 1px #aaaaaa;
+  padding-top: 10px;
+  padding-left: 10px;
+  position: relative;
+  left: -10px;
+  width: 106%;
+}
+section aside h4:first-child {
+  border-top: none;
+  padding-top: 0px;
+}
+section aside p {
+  font-style: normal;
+}
+section aside b {
+  display: inline-block;
+  padding-bottom: 4px;
+}
+section aside .color {
+  color: #8a9c2c;
+}
+section aside .kalkulator input[type="text"] {
+  background: #accb00;
+  display: inline-block;
+  width: 60px;
+  height: 24px;
+  margin: 2px;
+  text-align: center;
+  color: white;
+}
+section aside .newsletter {
+  padding: 6px 10px;
+  position: relative;
+  top: -10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ededed;
+  float: right;
+}
+section aside .newsletter .button {
+  float: right;
+}
+section aside .newsletter input {
+  margin-right: 5px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  height: 30px;
+  width: 175px;
+  float: left;
+}
+section aside .newsletter input::-webkit-input-placeholder, section aside .newsletter input:-moz-placeholder, section aside .newsletter input::-moz-placeholder, section aside .newsletter input:-ms-input-placeholder {
+  color: #aeaeae;
+}
+section #contactform label {
+  padding: 10px 2px;
+  color: #656565;
+}
+
+footer {
+  padding-top: 10px;
+}
+footer ul.recommend.link-list {
+  width: 62.5%;
+}
+@media only screen and (max-width: 767px) {
+  footer ul.recommend.link-list {
+    float: none;
+    width: auto;
+  }
+}
+footer ul.recommend.link-list li.logo-czas {
+  background-position: -120px 0;
+  height: 56px;
+  width: 97px;
+}
+footer ul.recommend.link-list li.logo-multikino {
+  background-position: -66px -136px;
+  height: 56px;
+  width: 90px;
+}
+footer ul.recommend.link-list li.logo-qlturka {
+  background-position: -12px -56px;
+  height: 56px;
+  width: 89px;
+}
+footer ul.recommend.link-list li.logo-tvnstyle {
+  background-position: -60px 0;
+  height: 56px;
+  width: 60px;
+}
+footer ul.recommend.link-list li.logo-sieciaki {
+  background-position: 0 0;
+  height: 56px;
+  width: 60px;
+}
+footer > div.logo {
+  width: 37.5%;
+  text-align: right;
+  position: relative;
+  right: -25px;
+}
+@media only screen and (max-width: 767px) {
+  footer > div.logo {
+    float: none;
+    width: auto;
+  }
+}
+footer > div.logo p {
+  padding-right: 10px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+}
+footer > div.logo strong {
+  position: relative;
+  top: -12px;
+}
+footer > div.logo img {
+  background-position: -44px -192px;
+  height: 30px;
+  width: 80px;
+}

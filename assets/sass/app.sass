@@ -1,0 +1,460 @@
+// Your custom settings file to override Foundation defaults
+@import settings
+@import compass/css3
+@import compass/css3/images
+@import foundation/settings
+@import settings
+@import foundation/functions/all
+
+// Control which mixins you have access too
+
+@import foundation/mixins/clearfix
+@import foundation/mixins/css-triangle
+@import foundation/mixins/font-size
+
+// Must include next two for semantic grid to work
+
+@import foundation/mixins/respond-to
+@import foundation/mixins/semantic-grid
+
+@import modular-scale
+
+@font-face 
+  font-family: "Helvetica Neue LTPro"
+  src: url('HelveticaNeueLTPro.otf') format('truetype')
+
+$mo-layout: smart
+@import "mo/*.png"
+
+// styles
+
+body
+  background-color: #f7f7f7
+  font-family:  Arial, sans-serif
+
+  section, nav, header, footer 
+    @include outerRow()
+    position: relative
+  header
+    background: #fff
+    height: 112px
+    margin-top: 24px
+    padding: 5px
+    padding-bottom: 0px
+    @include border-top-left-radius(10px)
+    @include border-top-right-radius(10px)
+    & > div
+      background: transparent image-url('mowimyobrazami-header-bg.png', false, true) top center repeat-x
+      height: 112px
+      @include border-top-left-radius(8px)
+      @include border-top-right-radius(8px)
+  nav, section
+    background-color: #fff
+    padding: 10px
+  section
+    @include border-bottom-left-radius(10px)
+    @include border-bottom-right-radius(10px)
+nav .nav-bar
+  @include border-radius(7px)
+  @include background-image(linear-gradient(bottom, $mainColor, $secondaryColor))
+  height: 38px
+  border: none
+  margin: 0
+  li
+    width: 16.6%
+    border: none
+    text-align: center
+    @include box-shadow($secondaryColor 3px 0px 0px)
+    border-right: 1px solid darken($mainColor, 10%)
+    border-left: 1px solid lighten($mainColor, 10%)
+    a
+      color: white
+      font-size: 16px
+    &:first-child
+      @include border-bottom-left-radius(5px)
+      @include border-top-left-radius(5px)
+      @include box-shadow($secondaryColor 3px 0px 0px)
+      border-left: none
+      a:hover
+        @include border-bottom-left-radius(5px)
+        @include border-top-left-radius(5px)
+        
+    &:last-child
+      border-right: none
+      width: 159px
+      @include border-bottom-right-radius(5px)
+      @include border-top-right-radius(5px)
+      @include box-shadow(transparent 0px 0px 0px)
+      a:hover
+        @include border-bottom-right-radius(5px)
+        @include border-top-right-radius(5px)
+      
+    a:hover
+      @include background-image(linear-gradient(bottom, darken($mainColor,10%), darken($secondaryColor,10%)))
+      
+    &:active, &.active
+      border-right: 1px solid darken($mainColor, 10%)
+      border-left: 1px solid lighten($mainColor, 10%)
+      @include background-image(linear-gradient(bottom, lighten(#e9e9e9,4%), #e9e9e9))
+      &:first-child
+        border-left: none
+      &:last-child
+        border-right: none
+      a
+        color: darken(#e9e9e9,45%)
+      a:hover
+        @include background-image(linear-gradient(bottom, darken($mainColor,10%), darken($secondaryColor,10%)))
+        color: white
+    
+      
+
+header > div
+  img.logo
+    background: transparent image-url('mowimyobrazami-logo.png', false, true) top left no-repeat
+    height: 106px
+    margin: -3px 8px
+    position: absolute
+  h1
+    font-size: 29px
+    color: #6a6a6a
+    padding: 35px 0px 35px 110px
+    margin: 0px
+    @include column(10)
+  & > div
+    @include column(6)
+    text-align: right
+    h2
+      font-size: 19px
+      color: #6a6a6a
+      padding: 10px 0px
+      margin-top: 7px
+      margin-bottom: 0px
+      big
+        @include border-radius(5px)
+        @include background-image(linear-gradient(bottom,$mainColor, $secondaryColor))
+        @include single-text-shadow(rgba(#333, 0.3) 1px 1px 1px)
+        padding: 4px 7px 4px 7px
+        color: #fff
+        font-family: Arial, sans-serif
+        font-weight: bold
+    .search-box
+      padding: 6px 10px
+      position: relative
+      right: -10px
+      @include border-radius(5px)
+      background-color: #ededed
+      float: right
+      .button
+        float: right
+        width: 75px
+      input
+        margin-right: 5px
+        margin-bottom: 0px
+        font-size: 12px
+        height: 30px
+        width: 175px
+        float: left
+        &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder
+          color: #aeaeae
+
+.button
+  @include background-image(linear-gradient(bottom,$mainColor, $secondaryColor))
+  text-transform: uppercase
+  padding: 8px 12px
+  font-size: 12px
+section .panel.radius
+  @include border-radius(5px)
+  padding: 15px 25px 
+  border: none
+  background: transparent image-url('mowimyobrazami-top.png', false, true) top left no-repeat
+  min-height: 200px
+  h2
+    font-size: 28px
+    color: $secondaryColor
+    margin-top: 18px
+    strong
+      font-weight: bold
+      font-size: 1.1em
+  p
+    font-size: 12px
+    line-height: 14px
+    width: 45%
+  .button
+    padding: 10px 15px
+section 
+  .content
+    @include column(11)
+    p
+      padding-right: 10px
+    h3
+      font-size: 18px
+      color: #656565
+    h4
+      font-size: 16px
+      line-height: 20px
+      color: #656565
+      @include single-text-shadow(rgba(#333, 0.3) 1px 1px 1px)
+      &.color
+        position: relative
+        padding: 10px 0
+        color: #8a9c2c
+        img
+          @include mo-sprite(mapa)
+          height: mo-sprite-height(mapa)
+          width: mo-sprite-width(mapa)
+          position: absolute
+          top: -12px
+          left: 280px
+    .map .icon
+      position: relative
+      top: -200px
+      left: 285px
+    ul
+      list-style: none
+      li
+        @include clearfix 
+
+    ul.galerie
+      li
+        @include column(4)
+        img
+          width: 100%
+        p
+          margin-top: -8px
+          padding: 10px 5px
+          max-height: 58px
+          text-align: center
+          background: #f9f9f8
+          font-size: 12px
+          color: darken(#f9f9f8, 32%)
+          &.one-line
+            padding: 19px 5px
+          
+    ul.media
+      li
+        @include column(8)
+        img
+          width: 100%
+        p
+          margin-top: -8px
+          padding: 10px
+          text-align: center
+          background: #f9f9f8
+          color: darken(#f9f9f8, 32%)
+          
+    ul.dzialaj
+      margin-bottom: 20px
+      li
+        color: #8a9c2c
+        padding: 5px 10px 5px 30px
+        position: relative
+        
+      li.num_1 img
+        @include mo-sprite(dzialaj-01)
+        height: mo-sprite-height(dzialaj-01)
+        width: mo-sprite-width(dzialaj-01)
+        position: absolute
+        left: 0
+        top: 14px
+          
+      li.num_2 img
+        @include mo-sprite(dzialaj-02)
+        height: mo-sprite-height(dzialaj-02)
+        width: mo-sprite-width(dzialaj-02)
+        position: absolute
+        left: 0
+        top: 5px
+      li.num_3 img
+        @include mo-sprite(dzialaj-03)
+        height: mo-sprite-height(dzialaj-03)
+        width: mo-sprite-width(dzialaj-03)
+        position: absolute
+        left: 0
+        top: 14px
+      li.num_4 img
+        @include mo-sprite(dzialaj-04)
+        height: mo-sprite-height(dzialaj-04)
+        width: mo-sprite-width(dzialaj-04)
+        position: absolute
+        left: 0
+        top: 14px
+      li.num_5 img
+        @include mo-sprite(dzialaj-05)
+        height: mo-sprite-height(dzialaj-05)
+        width: mo-sprite-width(dzialaj-05)
+        position: absolute
+        left: 0
+        top: 5px
+      li.text-right
+        text-align: right
+    
+    ul.o-nas
+      li
+        color: #8a9c2c
+        padding: 5px 10px 5px 20px 
+        position: relative
+        img
+          @include mo-sprite(dot)
+          height: mo-sprite-height(dot)
+          width: mo-sprite-width(dot)
+          position: absolute
+          left: 0px
+          top: 10px
+    ul.bz
+      li 
+        margin: 0 -8px
+        p.text
+          @include column(10)
+        p.img
+          @include column(6)
+          position: relative
+          &.logo
+            img
+              @include mo-sprite(bz-logo-kolor)
+              height: mo-sprite-height(bz-logo-kolor)
+              width: mo-sprite-width(bz-logo-kolor)
+          &.alfabet
+            top: -30px
+            img
+              @include mo-sprite(bz-alfabet)
+              height: mo-sprite-height(bz-alfabet)
+              width: mo-sprite-width(bz-alfabet)
+          &.kalendarz
+            top: -30px
+            img
+              @include mo-sprite(bz-kaledarz)
+              height: mo-sprite-height(bz-kaledarz)
+              width: mo-sprite-width(bz-kaledarz)
+          &.rysek
+
+            top: -20px
+            img
+              @include mo-sprite(bz-rysek)
+              height: mo-sprite-height(bz-rysek)
+              width: mo-sprite-width(bz-rysek)
+            
+    ul.adress    
+      span
+        @include column(8)
+        &.color
+          color: #8a9c2c
+          padding-left: 20px
+          padding-right: 0px
+          position: relative
+          img
+            @include mo-sprite(dot)
+            height: mo-sprite-height(dot)
+            width: mo-sprite-width(dot)
+            position: absolute
+            left: 0px
+            top: 5px
+    .button
+      padding: 10px 15px
+    .color
+      color: #8a9c2c
+  aside 
+    @include column(5)
+    position: absolute
+    bottom: 10px
+    right: 10px
+    top: 0
+    @include border-bottom-right-radius(5px)
+    @include border-top-right-radius(5px)
+    border-left: 1px dashed darken(#f9f9f8, 10%)
+    background: #f9f9f8
+    h4
+      border-top: 1px dashed darken(#f9f9f8, 10%)
+      font-size: 16px
+      line-height: 20px
+      color: #656565
+      @include single-text-shadow(rgba(#333, 0.3) 1px 1px 1px)
+      padding-top: 10px
+      padding-left: 10px
+      position: relative
+      left: -10px
+      width: 106%
+      &:first-child
+        border-top: none
+        padding-top: 0px
+    p
+      font-style: normal
+    b
+      display: inline-block
+      padding-bottom: 4px
+    .color
+      color: #8a9c2c
+    .kalkulator
+      input[type="text"]
+        background: $mainColor
+        display: inline-block
+        width: 60px
+        height: 24px
+        margin: 2px
+        text-align: center
+        color: white
+    .newsletter
+      padding: 6px 10px
+      position: relative
+      top: -10px
+      @include border-radius(5px)
+      background-color: #ededed
+      float: right
+      .button
+        float: right
+      input
+        margin-right: 5px
+        margin-bottom: 0px
+        font-size: 12px
+        height: 30px
+        width: 175px
+        float: left
+        &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder
+          color: #aeaeae
+  #contactform label 
+    padding: 10px 2px
+    color: #656565
+footer
+  padding-top: 10px
+  ul.recommend.link-list
+    @include column(10)
+    li.logo-czas
+      @include mo-sprite(logo-czas)
+      height: mo-sprite-height(logo-czas)
+      width: mo-sprite-width(logo-czas)
+    li.logo-multikino
+      @include mo-sprite(logo-multikino)
+      height: mo-sprite-height(logo-multikino)
+      width: mo-sprite-width(logo-multikino)
+    li.logo-qlturka
+      @include mo-sprite(logo-qlturka)
+      height: mo-sprite-height(logo-qlturka)
+      width: mo-sprite-width(logo-qlturka)
+    li.logo-tvnstyle
+      @include mo-sprite(logo-tvnstyle)
+      height: mo-sprite-height(logo-tvnstyle)
+      width: mo-sprite-width(logo-tvnstyle)
+    li.logo-sieciaki
+      @include mo-sprite(logo-sieciaki)
+      height: mo-sprite-height(logo-sieciaki)
+      width: mo-sprite-width(logo-sieciaki)
+  & > div.logo
+    @include column(6)
+    text-align: right
+    position: relative
+    right: -25px
+    p
+      padding-right: 10px
+      margin-bottom: 4px
+      font-size: 12px
+      line-height: 14px
+      text-align: right
+    strong
+      position: relative
+      top: -12px
+    img
+      @include mo-sprite(logo-gray)
+      height: mo-sprite-height(logo-gray)
+      width: mo-sprite-width(logo-gray)
+      
+      
+      
